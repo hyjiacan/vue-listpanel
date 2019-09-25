@@ -1,5 +1,11 @@
 # ListPanel
 
+![NPM](https://img.shields.io/npm/l/@hyjiacan/vue-listpanel?style=flat-square)
+![Travis (.org)](https://img.shields.io/travis/hyjiacan/vue-listpanel?style=flat-square)
+![npm (scoped)](https://img.shields.io/npm/v/@hyjiacan/vue-listpanel?style=flat-square)
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@hyjiacan/vue-listpanel?style=flat-square)
+![npm](https://img.shields.io/npm/dm/@hyjiacan/vue-listpanel?style=flat-square)
+
 一个 Vue.js 2.0 的可选择列表面板
 
 ### 依赖

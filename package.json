@@ -1,6 +1,6 @@
 {
-  "name": "@hyjiacan/vue-list-panel",
-  "version": "0.1.0",
+  "name": "@hyjiacan/vue-listpanel",
+  "version": "0.1.3",
   "description": "List panel component for Vue.js 2.0",
   "main": "lib/listpanel.common.js",
   "scripts": {

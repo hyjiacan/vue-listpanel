@@ -15,7 +15,7 @@
         <span class="pending"></span>
       </span>
     </h1>
-<!--    <meta-info/>-->
+    <meta-info/>
     <h2 v-lang>Samples</h2>
     <main-page @show-tip="onShowTip"/>
     <div id="tip" v-show="tipVisible">{{tipText}}</div>
@@ -59,14 +59,14 @@ export default {
     MetaInfo,
     MainPage
   },
-  data () {
+  data() {
     return {
       tipVisible: false,
       tipText: null
     }
   },
   methods: {
-    onShowTip (tip) {
+    onShowTip(tip) {
       this.tipText = tip
       this.tipVisible = true
       this.$nextTick(() => {
@@ -76,7 +76,7 @@ export default {
       })
     }
   },
-  mounted () {
+  mounted() {
     // let isZH = /^zh/i.test(navigator.language)
     // document.body.classList.add(isZH ? 'zh' : 'en')
     // window.jsonp('https://api.github.com/repos/hyjiacan/vue-listpanel/tags', 'tagsCallback')
@@ -117,9 +117,11 @@ a, a:visited, a:link, a:active {
   color: #4160aa;
   font-weight: 600;
 }
+
 a:focus, a:hover {
   color: #45c153;
 }
+
 h1 small {
   font-size: 16px;
   color: #666;
@@ -142,6 +144,7 @@ h3 {
 
   & + ul {
     border-left: 3px solid transparent;
+
     &:hover {
       border-color: #b3b0a9;
     }
@@ -180,7 +183,7 @@ code {
   }
 }
 
-main > code{
+main > code {
   padding: 15px 10px;
   margin: 10px 0;
   display: block;
@@ -245,27 +248,35 @@ main > code{
 .zh .mask:before {
   content: '正在加载内容...';
 }
+
 .zh .latest-text:before {
   content: '最新版本:';
 }
+
 .zh .release-text:before {
   content: '发布于 ';
 }
+
 .zh .pending:before {
   content: '加载中...';
 }
+
 .en .mask:before {
   content: 'Loading content...';
 }
+
 .en .latest-text:before {
   content: 'Latest: ';
 }
+
 .en .release-text:before {
   content: ' released at ';
 }
+
 .en .pending:before {
   content: 'Loading...';
 }
+
 #source {
   margin-left: 5px;
   margin-right: 15px;
